@@ -61,6 +61,7 @@ body{
     gap: 10px;
     margin-bottom: 1.1em;
     padding-bottom: 20px;
+    padding-top: 10px;
 }
 .ins{
     border: 1px solid gray;
@@ -93,6 +94,7 @@ body{
 #reset{
     margin: auto;
     padding: 5px;
+    min-width: 100px;
     width: 15%;
     background-color: #023047;
     color: white;
@@ -101,4 +103,11 @@ body{
     border-radius: 4px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media all and (0 < width < 500px){
+    #win{
+        width: 98%;
+        height: 60%;
+    }
 }
