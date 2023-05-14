@@ -3,10 +3,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Bruno Ace SC', cursive;
-    box-sizing: border-box;
     background-color: rgb(26, 25, 25);
     color: white;
 }
@@ -94,15 +94,21 @@ body{
 #reset{
     margin: auto;
     padding: 5px;
-    min-width: 100px;
+    min-width: 150px;
     width: 15%;
-    background-color: #023047;
+    height: 35px;
+    background: linear-gradient(to right, #001219, #003844, #005f73, #001219);
     color: white;
     font-size: 1.1em;
     font-weight: bold;
     border-radius: 4px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: none;
+}
+#reset:hover{
+    transition: 100ms;
+    border: 2px solid gray;
 }
 
 @media all and (0 < width < 500px){

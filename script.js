@@ -150,13 +150,24 @@ class TicTakToe{
         if(vb4 === 'O' && vb5 === 'O' && vb6 === 'O'){
             this.playerWon(2)
         }
-        // if(vb1 === vb2 === vb3 === 'X' || vb4 === vb5 === vb6 === 'X' || vb7 === vb8 === vb9 === 'X' || vb1 === vb4 === vb7 == 'X' || vb2 === vb5 === vb8 === 'X' || vb3 === vb6 === vb9 === 'X' || vb1 === vb5 === vb9 === 'X' || vb3 === vb5 === vb7 === 'X'){
-        //     this.playerWon(1)
-            
-        // }
-        // if(vb1 === vb2 === vb3 === 'O' || vb4 === vb5 === vb6 === 'O' || vb7 === vb8 === vb9 === 'O' || vb1 === vb4 === vb7 == 'O' || vb2 === vb5 === vb8 === 'O' || vb3 === vb6 === vb9 === 'O' || vb1 === vb5 === vb9 === 'O' || vb3 === vb5 === vb7 === 'O'){
-        //     this.playerWon(2)
-        // }
+        if(vb7 === 'O' && vb8 === 'O' && vb9 === 'O'){
+            this.playerWon(2)
+        }
+        if(vb1 === 'O' && vb4 === 'O' && vb7 === 'O'){
+            this.playerWon(2)
+        }
+        if(vb2 === 'O' && vb5 === 'O' && vb8 === 'O'){
+            this.playerWon(2)
+        }
+        if(vb3 === 'O' && vb6 === 'O' && vb9 === 'O'){
+            this.playerWon(2)
+        }
+        if(vb1 === 'O' && vb5 === 'O' && vb9 === 'O'){
+            this.playerWon(2)
+        }
+        if(vb3 === 'O' && vb5 === 'O' && vb7 === 'O'){
+            this.playerWon(2)
+        }
     }
 }
 
