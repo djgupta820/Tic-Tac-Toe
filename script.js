@@ -99,9 +99,9 @@ class TicTakToe{
         }
     }
 
-    playerWon(playerID){
+    displayMessage(str){
         this.win.style.display = 'block'
-        this.won.innerText = `Player ${playerID} Won`
+        this.won.innerText = str
         setTimeout(()=>{
             win.style.display = 'none'
         }, 10000)
@@ -120,56 +120,56 @@ class TicTakToe{
 
         // for player 1
         if(vb1 === 'X' && vb2 === 'X' && vb3 === 'X'){
-            this.playerWon(1)
+            this.displayMessage("Hurray! Player 1 Won!")
         }
         if(vb4 === 'X' && vb5 === 'X' && vb6 === 'X'){
-            this.playerWon(1)
+            this.displayMessage("Hurray! Player 1 Won!")
         }
         if(vb7 === 'X' && vb8 === 'X' && vb9 === 'X'){
-            this.playerWon(1)
+            this.displayMessage("Hurray! Player 1 Won!")
         }
         if(vb1 === 'X' && vb4 === 'X' && vb7 === 'X'){
-            this.playerWon(1)
+            this.displayMessage("Hurray! Player 1 Won!")
         }
         if(vb2 === 'X' && vb5 === 'X' && vb8 === 'X'){
-            this.playerWon(1)
+            this.displayMessage("Hurray! Player 1 Won!")
         }
         if(vb3 === 'X' && vb6 === 'X' && vb9 === 'X'){
-            this.playerWon(1)
+            this.displayMessage("Hurray! Player 1 Won!")
         }
         if(vb1 === 'X' && vb5 === 'X' && vb9 === 'X'){
-            this.playerWon(1)
+            this.displayMessage("Hurray! Player 1 Won!")
         }
         if(vb3 === 'X' && vb5 === 'X' && vb7 === 'X'){
-            this.playerWon(1)
+            this.displayMessage("Hurray! Player 1 Won!")
         }
         // for player 2
         if(vb1 === 'O' && vb2 === 'O' && vb3 === 'O'){
-            this.playerWon(2)
+            this.displayMessage("Hurray! Player 2 Won!")
         }
         if(vb4 === 'O' && vb5 === 'O' && vb6 === 'O'){
-            this.playerWon(2)
+            this.displayMessage("Hurray! Player 2 Won!")
         }
         if(vb7 === 'O' && vb8 === 'O' && vb9 === 'O'){
-            this.playerWon(2)
+            this.displayMessage("Hurray! Player 2 Won!")
         }
         if(vb1 === 'O' && vb4 === 'O' && vb7 === 'O'){
-            this.playerWon(2)
+            this.displayMessage("Hurray! Player 2 Won!")
         }
         if(vb2 === 'O' && vb5 === 'O' && vb8 === 'O'){
-            this.playerWon(2)
+            this.displayMessage("Hurray! Player 2 Won!")
         }
         if(vb3 === 'O' && vb6 === 'O' && vb9 === 'O'){
-            this.playerWon(2)
+            this.displayMessage("Hurray! Player 2 Won!")
         }
         if(vb1 === 'O' && vb5 === 'O' && vb9 === 'O'){
-            this.playerWon(2)
+            this.displayMessage("Hurray! Player 2 Won!")
         }
         if(vb3 === 'O' && vb5 === 'O' && vb7 === 'O'){
-            this.playerWon(2)
+            this.displayMessage("Hurray! Player 2 Won!")
         }
     }
 }
 
 const ttt = new TicTakToe()
-ttt.playerWon(1)
+ttt.displayMessage("Welcome")
