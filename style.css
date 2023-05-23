@@ -91,6 +91,10 @@ body{
     align-items: center;
     justify-content: center;
 }
+.box > h1{
+    width: 100%;
+    text-align: center;
+}
 #reset{
     margin: auto;
     padding: 5px;
