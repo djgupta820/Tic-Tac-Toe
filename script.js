@@ -15,7 +15,9 @@ class TicTakToe{
         this.win = document.getElementById('win')
         this.cb = document.getElementById('cb')
         this.ok = document.getElementById('ok')
-        
+        this.tapSound = new Audio('./static/tap-music.mp3')
+        this.winSound = new Audio('./static/win-music.mp3')
+
         this.reset.addEventListener('click', ()=>{
             this.resetBoard()
         })
@@ -86,6 +88,7 @@ class TicTakToe{
         this.b8.innerText = '';
         this.b9.innerText = '';
         this.player = 1
+        this.tapSound.play()
     }
 
     put(element){
@@ -97,6 +100,7 @@ class TicTakToe{
             element.innerText = 'O'
             this.player = 1
         }
+        this.tapSound.play()
     }
 
     displayMessage(str){
@@ -105,6 +109,9 @@ class TicTakToe{
         setTimeout(()=>{
             win.style.display = 'none'
         }, 10000)
+        if(str !== 'Welcome'){
+            this.winSound.play()
+        }
     }
 
     checkWinning(){
@@ -168,6 +175,8 @@ class TicTakToe{
         if(vb3 === 'O' && vb5 === 'O' && vb7 === 'O'){
             this.displayMessage("Hurray! Player 2 Won!")
         }
+
+        
     }
 }
 
