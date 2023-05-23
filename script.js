@@ -176,7 +176,10 @@ class TicTakToe{
             this.displayMessage("Hurray! Player 2 Won!")
         }
 
-        
+        // draw case
+        if(b1.innerText && b2.innerText !== '' && b3.innerText !== '' && b4.innerText !== '' && b5.innerText != '' && b6.innerText !== '' && b7.innerText !== '' && b8.innerText !== '' && b9.innerText !== ''){
+            this.displayMessage("Match Draw!")
+        }
     }
 }
 
